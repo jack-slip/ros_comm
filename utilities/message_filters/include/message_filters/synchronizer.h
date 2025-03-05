@@ -372,7 +372,7 @@ template<typename M0, typename M1, typename M2, typename M3, typename M4,
 struct PolicyBase
 {
   typedef mpl::vector<M0, M1, M2, M3, M4, M5, M6, M7, M8> Messages;
-  typedef Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8> Signal;
+  typedef SignalN<M0, M1, M2, M3, M4, M5, M6, M7, M8> Signal;
   typedef mpl::vector<ros::MessageEvent<M0 const>, ros::MessageEvent<M1 const>, ros::MessageEvent<M2 const>, ros::MessageEvent<M3 const>,
                       ros::MessageEvent<M4 const>, ros::MessageEvent<M5 const>, ros::MessageEvent<M6 const>, ros::MessageEvent<M7 const>,
                       ros::MessageEvent<M8 const> > Events;
